@@ -12,12 +12,15 @@ export default function Footer() {
               Office<span className="text-warning">Smart</span> Store
             </h5>
             <p className="text-white-50 small">
-              Tu aliado en artículos de oficina de alta calidad. Ergonomía, tecnología y organización
-              para potenciar tu productividad.
+              Tu aliado en artículos de oficina de alta calidad. Ergonomía,
+              tecnología y organización para potenciar tu productividad.
             </p>
             <div className="d-flex gap-3 mt-3">
               {[
-                { icon: "bi-github", href: "https://github.com" },
+                {
+                  icon: "bi-github",
+                  href: "https://github.com/martir5913/office-smart-store",
+                },
                 { icon: "bi-facebook", href: "#" },
                 { icon: "bi-instagram", href: "#" },
                 { icon: "bi-twitter-x", href: "#" },
@@ -42,12 +45,24 @@ export default function Footer() {
           <div className="col-6 col-lg-2">
             <h6 className="fw-bold text-warning mb-3">Catálogo</h6>
             <ul className="list-unstyled small">
-              {["Papelería", "Mobiliario", "Tecnología", "Organización", "Ergonomía"].map((cat) => (
+              {[
+                "Papelería",
+                "Mobiliario",
+                "Tecnología",
+                "Organización",
+                "Ergonomía",
+              ].map((cat) => (
                 <li key={cat} className="mb-1">
-                  <a href="#" className="text-white-50 text-decoration-none"
+                  <a
+                    href="#"
+                    className="text-white-50 text-decoration-none"
                     onMouseEnter={(e) => (e.target.style.color = "#ffc107")}
-                    onMouseLeave={(e) => (e.target.style.color = "")}>
-                    <i className="bi bi-chevron-right me-1" style={{ fontSize: "0.65rem" }}></i>
+                    onMouseLeave={(e) => (e.target.style.color = "")}
+                  >
+                    <i
+                      className="bi bi-chevron-right me-1"
+                      style={{ fontSize: "0.65rem" }}
+                    ></i>
                     {cat}
                   </a>
                 </li>
@@ -59,12 +74,24 @@ export default function Footer() {
           <div className="col-6 col-lg-2">
             <h6 className="fw-bold text-warning mb-3">Empresa</h6>
             <ul className="list-unstyled small">
-              {["Sobre nosotros", "Blog", "Innovaciones", "Catálogo PDF", "Contacto"].map((item) => (
+              {[
+                "Sobre nosotros",
+                "Blog",
+                "Innovaciones",
+                "Catálogo PDF",
+                "Contacto",
+              ].map((item) => (
                 <li key={item} className="mb-1">
-                  <a href="#" className="text-white-50 text-decoration-none"
+                  <a
+                    href="#"
+                    className="text-white-50 text-decoration-none"
                     onMouseEnter={(e) => (e.target.style.color = "#ffc107")}
-                    onMouseLeave={(e) => (e.target.style.color = "")}>
-                    <i className="bi bi-chevron-right me-1" style={{ fontSize: "0.65rem" }}></i>
+                    onMouseLeave={(e) => (e.target.style.color = "")}
+                  >
+                    <i
+                      className="bi bi-chevron-right me-1"
+                      style={{ fontSize: "0.65rem" }}
+                    ></i>
                     {item}
                   </a>
                 </li>
@@ -100,9 +127,7 @@ export default function Footer() {
 
         <div className="d-flex flex-wrap justify-content-between align-items-center small text-white-50">
           <span>© {year} Office Smart Store. Martir Dev</span>
-          <span>
-            Intecap 2026
-          </span>
+          <span>Intecap 2026</span>
         </div>
       </div>
     </footer>
